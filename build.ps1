@@ -8,4 +8,4 @@ cd $build_path
 cmake -G "Visual Studio 17 2022" ../..
 cmake --build .
 cd ../..
-& "$build_path/Debug/$project_name.exe"
+mv "$build_path/Debug/$project_name.exe" "$root_path/binary.exe"

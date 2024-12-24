@@ -9,4 +9,4 @@ cd $build_path
 cmake ../..
 make
 cd ../..
-"$build_path/$project_name"
+mv "$build_path/$project_name" "$root_path/binary"
