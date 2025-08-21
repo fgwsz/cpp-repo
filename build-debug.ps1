@@ -8,4 +8,4 @@ cd $build_path
 cmake -G "Visual Studio 17 2022" ../../..
 cmake --build . --config Debug
 cd ../../..
-mv "$build_path/Debug/$project_name.exe" "$root_path/binary-debug.exe"
+Move-Item -Path "$build_path/Debug/$project_name.exe" -Destination "$root_path/binary-debug.exe" -Force

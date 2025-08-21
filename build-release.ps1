@@ -8,4 +8,4 @@ cd $build_path
 cmake -G "Visual Studio 17 2022" ../../..
 cmake --build . --config Release
 cd ../../..
-mv "$build_path/Release/$project_name.exe" "$root_path/binary-release.exe"
+Move-Item -Path "$build_path/Release/$project_name.exe" -Destination "$root_path/binary-release.exe" -Force
